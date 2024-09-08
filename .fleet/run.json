@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "type": "gradle",
+            "name": "Build and Run Debug",
+            "tasks": ["assembleDebug", "installDebug"],
+        },
+        {
+            "name": "collegeDate [build] (1)",
+            "type": "gradle",
+            "workingDir": "$PROJECT_DIR$",
+            "tasks": ["build"],
+            "args": [""],
+            "initScripts": {
+                "flmapper": "ext.mapPath = { path -> path }"
+            }
+        }
+    ]
+}
